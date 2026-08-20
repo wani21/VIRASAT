@@ -161,7 +161,7 @@ export const FEATURED_TRADITIONS: CulturalTradition[] = [
     location:    { state: 'Tamil Nadu', region: 'South India' },
     shortDesc:   'One of the oldest classical dance forms of India, originating in the temples of Tamil Nadu.',
     description: 'Bharatanatyam is a major genre of Indian classical dance that originated in the Hindu temples of Tamil Nadu. Rooted in the Natya Shastra — the ancient treatise on performance arts — it blends expression, music, beat and dance. The dance expresses Hindu religious stories and spiritual ideas.',
-    imageUrl:    'https://images.unsplash.com/photo-1583779457094-ab6f77f7bf57?w=800&q=80',
+    imageUrl:    'https://images.unsplash.com/photo-1545126881-d3f8b1389a98?w=800&q=80',
     origin:      'Tamil Nadu',
     language:    'Tamil / Sanskrit',
     occasion:    'Temple rituals, classical concerts, cultural celebrations',
@@ -277,7 +277,7 @@ export const HERITAGE_CATEGORIES = [
     count:    1240,
     icon:     'Landmark',
     desc:     'Forts, temples, mosques, tombs and historical structures',
-    imageUrl: 'https://images.unsplash.com/photo-1609766857165-3c5cf2a48c30?w=600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=600&q=80',
   },
   {
     id:       'artefacts',
@@ -309,7 +309,7 @@ export const HERITAGE_CATEGORIES = [
     count:    980,
     icon:     'Music',
     desc:     'Classical dance, music, theatre and folk performances',
-    imageUrl: 'https://images.unsplash.com/photo-1583779457094-ab6f77f7bf57?w=600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1545126881-d3f8b1389a98?w=600&q=80',
   },
   {
     id:       'traditions',

@@ -108,6 +108,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${fontVariables} h-full scroll-smooth`}
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col antialiased bg-[#faf5e4] text-[#3d2b1f]">
         <Navbar />
