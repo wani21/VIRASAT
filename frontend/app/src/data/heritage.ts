@@ -9,8 +9,8 @@ import type {
 
 /* ─────────────────────────────────────────────────────────────────────────────
    VIRASAT — Mock Heritage Data
-   Replace individual data items with real Supabase queries as backend arrives.
-   Service layer (src/services/) handles the API abstraction.
+   All image URLs are configured here. You can easily replace any imageUrl string
+   with your own local image path (e.g., '/images/warli.jpg') or external URL.
    ───────────────────────────────────────────────────────────────────────── */
 
 /* ─── Featured Monuments ─────────────────────────────────────────────────── */
@@ -161,7 +161,7 @@ export const FEATURED_TRADITIONS: CulturalTradition[] = [
     location:    { state: 'Tamil Nadu', region: 'South India' },
     shortDesc:   'One of the oldest classical dance forms of India, originating in the temples of Tamil Nadu.',
     description: 'Bharatanatyam is a major genre of Indian classical dance that originated in the Hindu temples of Tamil Nadu. Rooted in the Natya Shastra — the ancient treatise on performance arts — it blends expression, music, beat and dance. The dance expresses Hindu religious stories and spiritual ideas.',
-    imageUrl:    'https://images.unsplash.com/photo-1545126881-d3f8b1389a98?w=800&q=80',
+    imageUrl:    'https://images.unsplash.com/photo-1617688319108-cb3bdc88f587?w=800&q=80',
     origin:      'Tamil Nadu',
     language:    'Tamil / Sanskrit',
     occasion:    'Temple rituals, classical concerts, cultural celebrations',
@@ -181,7 +181,7 @@ export const FEATURED_TRADITIONS: CulturalTradition[] = [
     location:    { state: 'Maharashtra', region: 'Palghar & Thane districts' },
     shortDesc:   'Ancient tribal art using geometric shapes to depict daily life — a living tradition over 4,000 years old.',
     description: 'Warli painting is one of the oldest art traditions in India, practiced by the Warli tribe of Maharashtra. Using basic geometric shapes — circles, triangles, and squares — these paintings depict daily life, nature, and ritual ceremonies. Traditionally painted in white on mud walls using rice paste, the art form has survived for over 4,000 years.',
-    imageUrl:    'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    imageUrl:    'https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=800&q=80',
     origin:      'Maharashtra (Palghar)',
     occasion:    'Seasonal festivals, marriages, harvests',
     tags:        ['tribal', 'warli', 'painting', 'maharashtra', 'folk-art'],
@@ -268,7 +268,7 @@ export const HERITAGE_TIMELINE: HistoricalEvent[] = [
   },
 ]
 
-/* ─── Heritage Categories ────────────────────────────────────────────────── */
+/* ─── Heritage Categories ("India's Heritage in All Its Forms") ─────────── */
 
 export const HERITAGE_CATEGORIES = [
   {
@@ -293,7 +293,7 @@ export const HERITAGE_CATEGORIES = [
     count:    2180,
     icon:     'Scroll',
     desc:     'Miniatures, murals, manuscripts and traditional illustrations',
-    imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=600&q=80',
   },
   {
     id:       'textiles',
@@ -301,7 +301,7 @@ export const HERITAGE_CATEGORIES = [
     count:    3420,
     icon:     'Layers',
     desc:     'Weaves, embroideries, pottery and traditional crafts',
-    imageUrl: 'https://images.unsplash.com/photo-1603400521630-9f2de124b33b?w=600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80',
   },
   {
     id:       'performing',
@@ -309,7 +309,7 @@ export const HERITAGE_CATEGORIES = [
     count:    980,
     icon:     'Music',
     desc:     'Classical dance, music, theatre and folk performances',
-    imageUrl: 'https://images.unsplash.com/photo-1545126881-d3f8b1389a98?w=600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80',
   },
   {
     id:       'traditions',
@@ -317,7 +317,7 @@ export const HERITAGE_CATEGORIES = [
     count:    1560,
     icon:     'Globe',
     desc:     'Festivals, rituals, cuisine and cultural practices',
-    imageUrl: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1605807646983-377bc5a76493?w=600&q=80',
   },
 ]
 
@@ -328,8 +328,8 @@ export const MAP_MARKERS: MapMarker[] = [
   { id: 'mk-002', assetId: 'mon-002', name: 'Brihadeeswarar Temple', category: 'architecture',  state: 'Tamil Nadu',  lat: 10.7825, lng: 79.1316, thumbnail: 'https://images.unsplash.com/photo-1588416936097-41850ab3d86d?w=200&q=80' },
   { id: 'mk-003', assetId: 'mon-003', name: 'Hampi Ruins',           category: 'monument',      state: 'Karnataka',   lat: 15.3350, lng: 76.4600, thumbnail: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=200&q=80' },
   { id: 'mk-004', assetId: 'mon-004', name: 'Ajanta Caves',          category: 'architecture',  state: 'Maharashtra', lat: 20.5523, lng: 75.7033, thumbnail: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=200&q=80' },
-  { id: 'mk-005', assetId: 'trd-002', name: 'Warli Art Village',     category: 'tradition',     state: 'Maharashtra', lat: 19.8000, lng: 72.7000, thumbnail: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=80' },
-  { id: 'mk-006', assetId: 'trd-001', name: 'Bharatanatyam Origin',  category: 'dance',         state: 'Tamil Nadu',  lat: 11.9416, lng: 79.8083, thumbnail: 'https://images.unsplash.com/photo-1583779457094-ab6f77f7bf57?w=200&q=80' },
+  { id: 'mk-005', assetId: 'trd-002', name: 'Warli Art Village',     category: 'tradition',     state: 'Maharashtra', lat: 19.8000, lng: 72.7000, thumbnail: 'https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=200&q=80' },
+  { id: 'mk-006', assetId: 'trd-001', name: 'Bharatanatyam Origin',  category: 'dance',         state: 'Tamil Nadu',  lat: 11.9416, lng: 79.8083, thumbnail: 'https://images.unsplash.com/photo-1617688319108-cb3bdc88f587?w=200&q=80' },
 ]
 
 /* ─── Mock AI Recognition Steps ─────────────────────────────────────────── */
