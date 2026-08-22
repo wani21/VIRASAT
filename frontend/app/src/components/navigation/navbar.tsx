@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
   Landmark, Search, Compass, MapPin, BookOpen, Archive,
-  ScanLine, Menu, X, ChevronDown, Globe
+  ScanLine, Menu, X, ChevronDown, Globe, User
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { SUPPORTED_LANGUAGES } from '@/data/heritage'
@@ -49,6 +49,12 @@ const NAV_LINKS = [
     href:  '/archive',
     icon:  Archive,
     desc:  'Digital heritage archive',
+  },
+  {
+    label: 'Dashboard',
+    href:  '/dashboard',
+    icon:  User,
+    desc:  'Explorer, Curator & Admin roles',
   },
 ]
 
