@@ -39,6 +39,7 @@ import {
   getStoryForAsset,
 } from '@/services/heritage-service'
 import { SUPPORTED_LANGUAGES } from '@/data/heritage'
+import { ThreeViewer } from '@/components/heritage/three-viewer'
 import type { HeritageAsset, HeritageStory } from '@/types/heritage'
 
 export default function HeritageDetailPage() {
@@ -346,30 +347,11 @@ export default function HeritageDetailPage() {
             )}
           </div>
 
-          {/* Right Column: 3D/AR Teaser & Related Heritage */}
+          {/* Right Column: 3D/AR Viewer & Related Heritage */}
           <div className="flex flex-col gap-8">
-            {/* 3D / AR Experience Placeholder Card */}
-            <div className="bg-walnut-800 text-parchment-100 p-6 border border-bronze-500/30 flex flex-col gap-4">
-              <div className="flex items-center gap-2">
-                <Box className="w-5 h-5 text-bronze-400" />
-                <span className="font-monument text-xs text-parchment-200 tracking-wider">
-                  3D / AR IMMERSIVE VIEW
-                </span>
-              </div>
-
-              <div className="relative aspect-video bg-walnut-900 border border-parchment-100/10 flex flex-col items-center justify-center p-4 text-center overflow-hidden">
-                <Box className={`w-12 h-12 text-bronze-400 ${viewer3dActive ? 'animate-bounce' : ''}`} />
-                <p className="font-ui text-xs text-parchment-200/70 mt-2">
-                  {viewer3dActive ? '3D Model Loaded — Drag to rotate' : 'Interactive 3D Photogrammetry Model'}
-                </p>
-              </div>
-
-              <button
-                onClick={() => setViewer3dActive(!viewer3dActive)}
-                className="btn-heritage-accent text-xs w-full py-2.5"
-              >
-                {viewer3dActive ? 'Close 3D View' : 'Launch 3D Model Viewer'}
-              </button>
+            {/* 3D / AR Experience Interactive Card */}
+            <div className="flex flex-col gap-4">
+              <ThreeViewer />
             </div>
 
             {/* Related Heritage Assets */}
