@@ -136,7 +136,7 @@ export const FEATURED_ARTEFACTS: Artefact[] = [
     location:    { state: 'Tamil Nadu', region: 'Tamilakam' },
     shortDesc:   'The supreme achievement of Chola bronze casting — Shiva in his cosmic dance of creation and destruction.',
     description: 'The Chola Nataraja bronzes represent the pinnacle of South Indian metalwork. Cast by the lost-wax (cire perdue) method, these sculptures depict Shiva as Nataraja — Lord of Dance — performing his anandatandava, the dance of bliss. The image encodes complex Hindu cosmology: the damaru drum creates the universe, the flame destroys it, the dwarf Apasmara represents ignorance.',
-    imageUrl:    'https://images.unsplash.com/photo-1545126881-d3f8b1389a98?w=800&q=80',
+    imageUrl:    'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80',
     medium:      'Panchaloha Bronze',
     dynasty:     'Chola Empire',
     museum:      'Various — National Museum of India, Chennai Museum',

@@ -11,7 +11,7 @@ import { EraBadge, LocationMarker, HeritageDivider, Ornament } from '@/component
 
 const HERO_IMAGES = [
   {
-    src:    'https://images.unsplash.com/photo-1609766857165-3c5cf2a48c30?w=1800&q=85',
+    src:    'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1800&q=85',
     alt:    'Rajasthan fort at dawn',
     period: '15th Century',
     name:   'Kumbhalgarh Fort',

@@ -126,7 +126,7 @@ export default function ScannerPage() {
                 >
                   {selectedImage ? (
                     <div className="relative w-full h-full">
-                      <Image src={selectedImage} alt="Scanning target" fill className="object-contain" />
+                      <Image src={selectedImage} alt="Scanning target" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-contain" />
                       {/* Laser Beam Scanning Line Overlay */}
                       {analyzing && (
                         <motion.div
@@ -163,7 +163,7 @@ export default function ScannerPage() {
                       className="group flex flex-col gap-2 p-2 border border-[var(--border-light)] hover:border-bronze-500 bg-[var(--bg-page)] text-left transition-colors"
                     >
                       <div className="relative aspect-square w-full overflow-hidden">
-                        <Image src={sample.url} alt={sample.name} fill className="object-cover group-hover:scale-105 transition-transform" />
+                        <Image src={sample.url} alt={sample.name} fill sizes="(max-width: 640px) 50vw, 25vw" className="object-cover group-hover:scale-105 transition-transform" />
                       </div>
                       <span className="font-ui text-xs font-semibold text-[var(--text-primary)] truncate">
                         {sample.name}
@@ -238,7 +238,7 @@ export default function ScannerPage() {
             <div className="flex flex-col gap-6">
               <div className="bg-walnut-800 text-parchment-100 p-4 border border-bronze-500/30">
                 <div className="relative aspect-square w-full mb-4">
-                  <Image src={selectedImage!} alt="Scanned Result" fill className="object-cover" />
+                  <Image src={selectedImage!} alt="Scanned Result" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
                 </div>
                 <div className="flex items-center justify-between bg-walnut-900 p-3 border border-parchment-100/10">
                   <span className="font-ui text-xs text-parchment-200/70">Recognition Confidence</span>
